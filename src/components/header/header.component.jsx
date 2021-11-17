@@ -13,6 +13,9 @@ const Header = ({currentUser}) => (
       <Logo className='logo' />
     </Link>
     <div className='options'>
+      <span>
+        {currentUser ? `Hello ${currentUser.displayName}` : null}
+      </span>
       <Link className='option' to='/shop'>
         SHOP
       </Link>
